@@ -43,7 +43,7 @@ function generatePassword() {
     var pwdArr = [];
     // record the length of the password
     var pwdLength = window.prompt('Please type the length of the password: (Between 8 to 128)');
-    while (pwdLength < 8 || pwdLength > 128 || ) {
+    while (pwdLength < 8 || pwdLength > 128) {
         pwdLength = window.prompt('Please type the length of the password: (Between 8 to 128)');
     }
 
