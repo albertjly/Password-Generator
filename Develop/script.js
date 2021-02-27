@@ -51,16 +51,16 @@ function generatePassword(){
 
   window.confirm('Please choose the character types: ');
 
-  if (window.confirm('lowercase')){
+  if (window.confirm('Do you choose: Lowercase? (like: j, v, d, e, z)')){
     pwdArr.push.apply(pwdArr, pwdLc);
   }
-  if (window.confirm('uppercase')){
+  if (window.confirm('Do you choose: Uppercase? (like: H, Z, E, T, Q)')){
     pwdArr.push.apply(pwdArr, pwdUc);
   }
-  if (window.confirm('numeric')){
+  if (window.confirm('Do you choose: Numeric? (like: 2, 3, 8, 6, 0)')){
     pwdArr.push.apply(pwdArr, pwdN);
   }
-  if (window.confirm('special characters')){
+  if (window.confirm('Do you choose: Special Characters? (like: $, ], -, \, ^)')){
     pwdArr.push.apply(pwdArr, pwdSc);
   }
   // if the customer didn't select any character type
@@ -75,7 +75,7 @@ function generatePassword(){
     var pwdItem = pickArrItem(pwdArr);
     newPwd += pwdItem;
   }
-  
+
   return newPwd;
 
   /**
